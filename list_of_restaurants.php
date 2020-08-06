@@ -19,10 +19,10 @@
               <?php
        $serverName = "simplewebtp000000.database.windows.net";
        $connectionOptions = array(
-?>
-"Database" => "simpleweb"Uid" => "simpleweb"PWD" => "Simple@web", ",
-");
-simpleweb
+                            "Database" => "simpleweb",
+                            "Uid" => "simpleweb",
+                            "PWD" => "Simple@web");
+
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 if (!$conn) {
